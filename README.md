@@ -31,8 +31,8 @@ JSON file here: https://www.reddit.com/r/datasets/comments/1uyd0t/200000_jeopard
 # Use cases
 * Say something, whatever -> The bot reminds you that its purpose is to play Jeopardy and tells you a joke !<br />
 * Ask for a question, Subject: Question, Body: whatever -> The bot sends you one of his 200k+ questions from any category.<br />
-* Answer to a question, Subject: Response - #ID, #ID being an id (between 0 and 200k+) sent in the subject of the bot's previous mail, Body: a question from jeopardy with its category and value in dollars.<br />
-* Surrender a question, Subject: Response - #ID, #ID being an id (between 0 and 200k+) sent in the subject of the bot's previous mail, Body: the answer to the question refered by the #ID.<br />
+* Answer to a question, Subject: Response - #ID, #ID being an id (between 0 and 200k+) sent in the subject of the bot's previous mail, Body: Your answer to the bot's previous question.<br />
+* Surrender a question, Subject: Surrender - #ID, #ID being an id (between 0 and 200k+) sent in the subject of the bot's previous mail, Body: the answer to the question refered by the #ID.<br />
 
 # Future work & improvements
 * Handle multi-client and session save with MongoDB.<br />
