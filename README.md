@@ -26,7 +26,7 @@ JSON file here: https://www.reddit.com/r/datasets/comments/1uyd0t/200000_jeopard
 }
 ```
 * Retrieve & update the project dependencies: "npm install"<br />
-* Run ! "node app.js"<br />
+* Run ! "npm start"<br />
 
 # Use cases
 * Say something, whatever -> The bot reminds you that its purpose is to play Jeopardy and tells you a joke !<br />
