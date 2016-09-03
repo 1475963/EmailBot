@@ -7,7 +7,7 @@ You might even learn new chuck norris jokes !<br />
 * Download the jeopardy database (50mb) such file size cannot be (or partially) uploaded on github.<br />
 JSON file here: https://www.reddit.com/r/datasets/comments/1uyd0t/200000_jeopardy_questions_in_a_json_file/ <br />
 * Place this json under the folder "/data/"<br />
-* Edit your own config.json file under "/src/" in such a way:<br />
+* Add and edit your own config.json file at the repository root in such a way:<br />
 ```javascript
 {
     "name": "xxx",
