@@ -2,7 +2,7 @@
   "name": "EmailBot",
   "version": "1.0.0",
   "description": "Jeopardy bot<br />\r You can play jeopardy by email, just send one that follows the use cases bellow at the address: bob.sanders.belair@gmail.com<br />\r You might even learn new chuck norris jokes !<br />",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "mail-listener2": "^0.2.0",
     "mail-listener": "^0.7.1",
@@ -11,6 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,6 +1,6 @@
 var maillistener = require("mail-listener2");
 var config = require("./config.json")
-var jeopardy = require("../data/jeopardy_questions.json")
+var jeopardy = require("./data/jeopardy_questions.json")
 var nodemailer = require('nodemailer');
 var natural = require('natural');
 var http = require('http');
@@ -83,7 +83,7 @@ mailListener.on("mail", function(mail, seqno, attributes){
   mailOptions["to"] = mail.from;
   if (mail.subject.toLowerCase() == "question") {
     var index = Math.floor(Math.random() * jeopardy.length);
-    mailOptions["subject"] += " - " + index.toString() + " !";
+    mailOptions["subject"] = "Jeopardy - " + index.toString() + " !";
     var text = "Category: " + jeopardy[index]["category"] + "\nValue: " + jeopardy[index]["value"] + "\nQuestion: " + jeopardy[index]["question"];
     mailOptions["text"] = text;
 //    console.log("text content: ", mailOptions["text"]);
